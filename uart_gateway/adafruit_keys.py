@@ -1,2 +1,0 @@
-AIO_USERNAME = "clamp1998"
-AIO_KEY = "aio_WfJu19YlOGzjg8cevuY9W9A1AnIY"
