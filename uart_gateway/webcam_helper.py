@@ -1,4 +1,5 @@
 import cv2  # Install opencv-python
+import numpy
 
 class WebcamHelper: 
     def __init__(self, default_webcam: int = 0) -> None:

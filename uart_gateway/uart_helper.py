@@ -3,10 +3,11 @@ from serial import Serial
 from typing import List
 
 class UARTSensorData:
-    sensor: str
+    type: str
     value: str
-    def __init__(self, sensor, value) -> None:
-        self.sensor = sensor
+
+    def __init__(self, type, value) -> None:
+        self.type = type
         self.value = value
 
 class UARTHelper:
@@ -58,6 +59,7 @@ class UARTHelper:
 
     
     def readSerial(self) -> List[UARTSensorData]:
+        print("READ SERIAL: ")
         try:
             bytesToRead = self.__ser.inWaiting()
             sensor_data = []
@@ -90,5 +92,3 @@ class UARTHelper:
             print("Try to reconnect to UART.")
             self.connect()
             pass
-
-    
