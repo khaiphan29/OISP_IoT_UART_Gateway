@@ -1,0 +1,8 @@
+#python virtual environment and cache
+venv
+/__pycache__/*
+uart_gateway/__pycache__/*
+uart_gateway/ai_models/__pycache__/*
+
+#private keys that should not be published
+uart_gateway/adafruit_keys.py
