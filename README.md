@@ -24,6 +24,14 @@ git clone https://github.com/ultralytics/yolov5  # clone
 cd yolov5
 pip install -r requirements.txt  # install
 ```
+You also need to create Python file adafruit_key.py in folder uart_gateway, for your Adafruit connection. \
+The file content should be like this 
+``` Python
+#You can watch the instrucions or read Adafruit docs to know how to get the key.
+AIO_USERNAME = "your_adafruit_user_name"
+AIO_KEY = "your_ada_key"
+```
+
 ## Run the gateway
 ```
 python uart_gateway
